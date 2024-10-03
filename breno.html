@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Breno Arpojos, desenvolvedor que está aprofundando seus conhecimentos em HTML, CSS e JavaScript.">
+    <title>Portfólio | Desenvolvedor de Sistemas</title>
+    <link rel="stylesheet" href="portifólio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">BRENO DEV</h1>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="dark-mode-btn" onclick="toggleDarkMode()">Modo Escuro</button>
+        <button class="language-btn" onclick="toggleLanguage()">Idioma</button>
+        <div class="hamburger">&#9776;</div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo ao meu Portfólio</h1>
+            <p>Sou um desenvolvedor apaixonado por criar códigos incríveis.</p>
+        </div>
+    </section>
+    <div class="section">
+        <div class="about-section">
+            <img src="Minha Foto.jpg" alt="Sobre Mim" class="about-image">
+            <h2>Sobre Mim</h2>
+            <p>Oi! Eu sou um jovem desenvolvedor de sistemas e quero muito ser um programador incrível! Eu adoro tudo sobre tecnologia, design e dados. Para mim, é super divertido criar coisas legais, como sites e aplicativos!
+                Quando estou fazendo isso, fico pensando em como as pessoas vão usar o que eu criei. Eu gosto de fazer as coisas ficarem bonitas e fáceis de usar, como um jogo divertido. Sabe, eu acho que cada botão e cada cor pode fazer a diferença!
+                E eu também amo trabalhar com dados! É como brincar de detetive, tentando descobrir como as coisas funcionam e como podemos usar as informações para ajudar as pessoas. Gosto de imaginar que, com os dados, posso criar soluções incríveis!
+                Estou sempre aprendendo coisas novas, porque o mundo da tecnologia é cheio de surpresas. Eu mal posso esperar para crescer e fazer projetos que deixem as pessoas felizes e que ajudem de verdade!</p>
+        </div>
+    </div>
+    
+    <section id="projects" class="section">
+        <h2>Projetos</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="proj1.png" class="about-image">
+                <h3>Calculadora Interativa em C#</h3>
+                <p>Desenvolvi um código na linguagem C#...</p>
+                <a href="https://github.com/BRENO2024/Menu-com-10-op-es-que-envolvem-MATEM-TICA.git" download>Visualizar Projeto</a>
+            </div>
+            <div class="project">
+                <img src="proj2.png" class="about-image">
+                <h3>Cálculos da Matéria Escura</h3>
+                <p>Desenvolvimento de um software utilizando Windows Forms...</p>
+                <a href="https://github.com/BRENO2024/Trabalho-Do-Gabriel.git" download>Visualizar Projeto</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contato</h2>
+        <form id="contactForm" action="mailto:seuemail@exemplo.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu email">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Sua mensagem..."></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </section>    
+
+    <div class="tesseract-container">
+        <div class="tesseract"></div>
+    </div>
+    
+    <script src="porti.js"></script>
+</body>
+</html>
